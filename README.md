@@ -40,13 +40,12 @@ The following **additional** features are implemented:
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
 
-The HTML headings, buttons, and some fundamental functions:
 ![](https://i.imgur.com/TuqlTWB.gif)
-What happen if you click the wrong pattern:
+
 ![](https://i.imgur.com/mBkHeBL.gif)
-Play the full game and win:
+
 ![](https://i.imgur.com/aX4Cefd.gif)
-Try to play the full game again:
+
 ![](https://i.imgur.com/imfLAjO.gif)
 
 
