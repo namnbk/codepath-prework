@@ -33,8 +33,6 @@ function startGame() {
   // initialize game variables
   progress = 0;
   gamePlaying = true;
-  // reset the value of the time
-  clueHoldTime = 1000; 
   // replace start button with stop button
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
@@ -47,6 +45,8 @@ function stopGame() {
   // replace stop button with start button
   document.getElementById("startBtn").classList.remove("hidden");
   document.getElementById("stopBtn").classList.add("hidden");
+  // reset back the value of the time
+  clueHoldTime = 1000; 
 }
 
 // Automatically light up button
@@ -70,7 +70,7 @@ function playSingleClue(btn) {
 function playClueSequence(){
   guessCounter = 0;
   context.resume()
-  let delay = nextClueWaitTime; //set delay to initial wait time
+  let delay = nextClueWaitTime; // set delay to initial wait time
   for(let i = 0; i <= progress; i++){ // for each clue that is revealed so far
     console.log("play single clue: " + pattern[i] + " in " + delay + "ms")
     setTimeout(playSingleClue, delay, pattern[i]) // set a timeout to play that clue
@@ -124,10 +124,10 @@ function winGame(){
 
 // Sound Synthesis Functions
 const freqMap = {
-  1: 300.30,
+  1: 400.40,
   2: 1010.10,
-  3: 592.59,
-  4: 100.00,
+  3: 692.69,
+  4: 200.20,
 };
 function playTone(btn, len) {
   o.frequency.value = freqMap[btn];
