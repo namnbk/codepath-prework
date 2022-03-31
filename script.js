@@ -3,10 +3,10 @@
 const cluePauseTime = 333; 
 // how long to wait before starting playback of the clue sequence
 const nextClueWaitTime = 1000; 
-// how long to hold each clue's light/sound
-var clueHoldTime = 1000; 
 // a constant for decreasing clueHoldTime
 const decrease = 100;
+// how long to hold each clue's light/sound
+var clueHoldTime = 1000; 
 
 // Global Variables
 var pattern = new Array(8);
@@ -30,9 +30,11 @@ function patternGen() {
 function startGame() {
   // initialize the secret pattern
   patternGen();
-  //initialize game variables
+  // initialize game variables
   progress = 0;
   gamePlaying = true;
+  // reset the value of the time
+  clueHoldTime = 1000; 
   // replace start button with stop button
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
