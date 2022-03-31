@@ -122,10 +122,10 @@ function winGame(){
 
 // Sound Synthesis Functions
 const freqMap = {
-  1: 261.6,
-  2: 329.6,
-  3: 392,
-  4: 466.2,
+  1: 300.30,
+  2: 1010.10,
+  3: 592.59,
+  4: 100.00,
 };
 function playTone(btn, len) {
   o.frequency.value = freqMap[btn];
