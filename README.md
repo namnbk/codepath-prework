@@ -73,7 +73,7 @@ If I had more time, I would first play around with the four buttons' shapes. I w
 
 ## Interview Recording URL Link
 
-[My 5-minute Interview Recording](your-link-here)
+[My 5-minute Interview Recording](https://www.loom.com/share/f1c15c2266d542ac99b5c5d4959a813c)
 
 
 ## License
